@@ -11,7 +11,7 @@ Embed videos from vid.me into your WordPress site
 
 == Description ==
 
-[Vidme](https://vid.me) is the fastest and easiest way to upload videos — no account needed. No need to rely solely on YouTube or Vimeo to host the videos on your WordPress site. Vidme lets you upload unlimited videos with or without an account — perfect for quickly adding videos to your WordPress posts. 
+[Vidme](https://vid.me) is the fastest and easiest way to upload videos - no account needed. No need to rely solely on YouTube or Vimeo to host the videos on your WordPress site. Vidme lets you upload unlimited videos with or without an account - perfect for quickly adding videos to your WordPress posts. 
 
 With the Vidme WordPress plugin, you can easily add videos to your WordPress posts using nothing but the URL. Choose any video from [vid.me](https://vid.me/explore), copy the video URL and paste it to your post text editor. Then simply click over to the visual editor to confirm that it loads properly.
 
