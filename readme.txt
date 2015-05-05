@@ -61,7 +61,7 @@ For advanced customization, use the `[vidme]` shortcodes with `id`, `width`, `he
 
 == Changelog ==
 
-= 1.1  (2015-05-dd) =
+= 1.1  (2015-05-05) =
 * Add vidme shortcode.
 * Add i18n support.
 * Add hebrew (he_IL) traslation.
