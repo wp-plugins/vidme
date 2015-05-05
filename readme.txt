@@ -3,7 +3,7 @@ Contributors: vidme, ramiy
 Tags: Vid.me, vidme, video, embed
 Requires at least: 3.5
 Tested up to: 4.2
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,6 +36,10 @@ With the Vidme WordPress plugin, you can easily add videos to your WordPress pos
 * PHP version 5.4 or greater.
 * MySQL version 5.5 or greater.
 
+== Screenshots ==
+1. Pasting the URL to the text-editor.
+2. Pasting the URL to the visual-editor.
+
 == Frequently Asked Questions ==
 
 = How do I embed videos from vidme? =
@@ -50,8 +54,19 @@ In WordPress 4.2 you can double click the embedded video to set max `width` and 
 
 **Note:** Doing it the WordPress way, using the `[embed]` shortcode, is backwards and forward compatible, and it works with all the themes.
 
+= How do I customize my videos? =
+For advanced customization, use the `[vidme]` shortcodes with `id`, `width`, `height`, `autoplay`, `repeat` and `mute` parameters:
+
+`[vidme id="JaEF" width="500" height="400" autoplay="true" repeat="true" mute="false"]`
+
 == Changelog ==
 
-= 1.0 =
+= 1.1  (2015-05-dd) =
+* Add vidme shortcode.
+* Add i18n support.
+* Add hebrew (he_IL) traslation.
+* Add screenshots.
+
+= 1.0  (2015-04-30) =
 * Initial release.
 * Register embed handler.

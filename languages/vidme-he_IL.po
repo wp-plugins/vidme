@@ -1,0 +1,37 @@
+# Copyright (C) 2015 Vidme
+# This file is distributed under the same license as the Vidme package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Vidme\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/vidme\n"
+"POT-Creation-Date: 2015-04-30 20:05:51+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-04-30 23:33+0200\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: Rami Y <r_a_m_i@hotmail.com>\n"
+"Language-Team: Rami Yushuvaev <r_a_m_i@hotmail.com>\n"
+"Language: he_IL\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. Plugin Name of the plugin/theme
+msgid "Vidme"
+msgstr "Vidme"
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/vidme/"
+msgstr "https://wordpress.org/plugins/vidme/"
+
+#. Description of the plugin/theme
+msgid "Embed videos from vid.me into your WordPress site"
+msgstr "הטמעת סרטוני וידאו מתוך vid.me באתרי וורדפרס"
+
+#. Author of the plugin/theme
+msgid "Rami Yushuvaev"
+msgstr "רמי יושובייב"
+
+#. Author URI of the plugin/theme
+msgid "http://GenerateWP.com/"
+msgstr "http://GenerateWP.com/"
