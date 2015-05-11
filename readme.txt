@@ -63,9 +63,9 @@ For advanced customization, use the `[vidme]` shortcodes with `id`, `width`, `he
 
 = 1.1  (2015-05-05) =
 * Add vidme shortcode.
+* Add screenshots.
 * Add i18n support.
 * Add hebrew (he_IL) traslation.
-* Add screenshots.
 
 = 1.0  (2015-04-30) =
 * Initial release.
