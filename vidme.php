@@ -6,7 +6,10 @@ Description: Embed videos from vid.me into your WordPress site
 Version:     1.1
 Author:      Rami Yushuvaev
 Author URI:  http://GenerateWP.com/
+Text Domain: vidme
+Domain Path: /languages
 */
+
 
 
 
