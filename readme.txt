@@ -1,9 +1,9 @@
 === Vidme ===
 Contributors: vidme, ramiy
-Tags: Vid.me, vidme, video, embed
+Tags: Vid.me, vidme, video, embed, shortcode
 Requires at least: 3.5
 Tested up to: 4.2
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,9 +11,19 @@ Embed videos from vid.me into your WordPress site
 
 == Description ==
 
+Upload your videos to [vid.me](https://vid.me) using our iPhone app, Android app, or our website. Then embed them to your WordPress site using our WordPress plugin.
+
+= About Vidme =
+
 [Vidme](https://vid.me) is the fastest and easiest way to upload videos - no account needed. No need to rely solely on YouTube or Vimeo to host the videos on your WordPress site. Vidme lets you upload unlimited videos with or without an account - perfect for quickly adding videos to your WordPress posts. 
 
+= Vidme WordPress Plugin =
+
 With the Vidme WordPress plugin, you can easily add videos to your WordPress posts using nothing but the URL. Choose any video from [vid.me](https://vid.me/explore), copy the video URL and paste it to your post text editor. Then simply click over to the visual editor to confirm that it loads properly.
+
+= More Information =
+
+For any questions or more information, please [contact us](https://vid.me/feedback).
 
 == Installation ==
 
@@ -57,9 +67,13 @@ In WordPress 4.2 you can double click the embedded video to set max `width` and 
 = How do I customize my videos? =
 For advanced customization, use the `[vidme]` shortcodes with `id`, `width`, `height`, `autoplay`, `repeat` and `mute` parameters:
 
-`[vidme id="JaEF" width="500" height="400" autoplay="true" repeat="true" mute="false"]`
+`[vidme id="JaEF" width="600" height="400" autoplay="true" repeat="true" mute="false"]`
 
 == Changelog ==
+
+= 1.2  (2015-06-22) =
+* Improve embed handler regex to support http and https.
+* Improve shortcode - stop using extract() function and add input data validation.
 
 = 1.1  (2015-05-05) =
 * Add vidme shortcode.

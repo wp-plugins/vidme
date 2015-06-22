@@ -3,13 +3,12 @@
 Plugin Name: Vidme
 Plugin URI:  https://wordpress.org/plugins/vidme/
 Description: Embed videos from vid.me into your WordPress site
-Version:     1.1
+Version:     1.2
 Author:      Rami Yushuvaev
 Author URI:  http://GenerateWP.com/
 Text Domain: vidme
 Domain Path: /languages
 */
-
 
 
 
@@ -27,20 +26,23 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function vidme_embed_handler( $matches, $attr, $url, $rawattr ) {
 
+	// Generate embed code
 	$embed = sprintf(
 		'<iframe src="https://vid.me/e/%1$s" width="480" height="360" frameborder="0" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>',
 		esc_attr( $matches[1] )
 	);
 
+	// Return embed code
 	return apply_filters( 'embed_vidme', $embed, $matches, $attr, $url, $rawattr );
 
 }
 
 function vidme_embed() {
 
+	// Register embed handler
 	wp_embed_register_handler(
 		'vidme',
-		'#https://vid.me/(.*)#i',
+		'#https?://vid.me/(.*)#i',
 		'vidme_embed_handler'
 	);
 
@@ -55,7 +57,8 @@ add_action( 'init', 'vidme_embed' );
  */
 function vidme_shortcode( $atts ) {
 
-	extract( shortcode_atts(
+	// Set default values
+	$atts = shortcode_atts(
 		array(
 			'id'       => '',
 			'width'    => '640',
@@ -63,10 +66,13 @@ function vidme_shortcode( $atts ) {
 			'autoplay' => '0',
 			'repeat'   => '0',
 			'mute'     => '0'
-		), $atts )
-	);
+		), $atts );
 
-	return '<iframe src="https://vid.me/e/' . $id . '?autoplay=' . $autoplay . '&amp;loop=' . $repeat . '&amp;muted=' . $mute . '" width="' . $width . '" height="' . $height . '" frameborder="0" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>';
+	// Generate custom embed code
+	$embed = '<iframe src="https://vid.me/e/' . esc_attr( $atts['id'] ) . '?autoplay=' . esc_attr( $atts['autoplay'] ) . '&amp;loop=' . esc_attr( $atts['repeat'] ) . '&amp;muted=' . esc_attr( $atts['mute'] ) . '" width="' . esc_attr( $atts['width'] ) . '" height="' . esc_attr( $atts['height'] ) . '" frameborder="0" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>';
+
+	// Return embed code
+	return $embed;
 
 }
 
